@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url("pic.jpg");
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        fieldset {
+            border: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        legend {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"], button[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        input[type="submit"]:hover, button[type="submit"]:hover {
+            background-color: #80b783;
+        }
+    </style>
+</head>
+<body>
+    <form action="https://formspree.io/f/mdkkpbdo" method="POST">
+        <fieldset>
+            <legend>FORMS</legend>
+            <table>
+                <tr>
+                    <td><label>Name</label></td>
+                    <td><input type="text" name="name" placeholder="Enter your Name" required /></td>
+                </tr>
+                <tr>
+                    <td><label>Email</label></td>
+                    <td><input type="email" name="email" placeholder="Enter your Email" required /></td>
+                </tr>
+                <tr>
+                    <td><label>Age</label></td>
+                    <td><input type="number" name="age" placeholder="Enter your Age" required /></td>
+                </tr>
+                <tr>
+                    <td><label>Contact</label></td>
+                    <td><input type="tel" name="contact" placeholder="Enter your Contact" required /></td>
+                </tr>
+                <tr>
+                    <td><label>DOB</label></td>
+                    <td><input type="date" name="date" required /></td>
+                </tr>
+                <tr>
+                    <td><label>Passout Year</label></td>
+                    <td><input type="number" name="PassoutYear" placeholder="Enter your Passed out year" required /></td>
+                </tr>
+                <tr>
+                    <td><label>Upload your Image</label></td>
+                    <td><input type="file" name="image" required /></td>
+                </tr>
+                <tr>
+                    <td><label>Gender</label></td>
+                    <td>
+                        <input type="radio" value="male" name="gender" /> Male
+                        <input type="radio" value="female" name="gender" /> Female
+                        <input type="radio" value="others" name="gender" /> Others
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Programming Languages Known</label></td>
+                    <td>
+                        <input type="checkbox" value="Python" name="lang" /> Python
+                        <input type="checkbox" value="C" name="lang" /> C
+                        <input type="checkbox" value="Java" name="lang" /> Java
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Select Your Favorite Color</label></td>
+                    <td><input type="color" name="color" required /></td>
+                </tr>
+                <tr>
+                    <td><label>LinkedIn Profile</label></td>
+                    <td><input type="url" name="linkedin" placeholder="Enter your LinkedIn Link" required /></td>
+                </tr>
+            </table>
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+</body>
+</html>
