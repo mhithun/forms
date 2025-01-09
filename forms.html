@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Player Recruitment Application Form</title>
+</head>
+<body>
     <style>
-        * {
+        *{
             margin: 0;
             padding: 0;
         }
@@ -16,6 +17,7 @@
             background-color: #f4f4f4;
             margin: 0;
             padding: 0;
+            padding-top: 50%;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -23,27 +25,20 @@
             background-image: url("pic.jpg");
             background-position: center;
             background-size: cover;
-            background-attachment: fixed;
+            background-image: fixed;
         }
-
+        
         form {
             background: #fff;
-            padding: 20px;
+            padding: 100px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 400px;
+            width: 300px;
         }
 
-        fieldset {
-            border: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        legend {
-            font-size: 1.5rem;
-            margin-bottom: 20px;
+        #title {
             text-align: center;
+            margin-bottom: 20px;
         }
 
         label {
@@ -58,83 +53,70 @@
             margin-bottom: 10px;
             border: 1px solid #ccc;
             border-radius: 4px;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
         }
 
-        input[type="submit"], button[type="submit"] {
-            background-color: #4CAF50;
+        input[type="submit"] {
+            background-color: red;
             color: white;
             border: none;
             cursor: pointer;
             padding: 10px;
             font-size: 16px;
-            width: 100%;
         }
 
-        input[type="submit"]:hover, button[type="submit"]:hover {
+        input[type="submit"]:hover {
             background-color: #80b783;
         }
     </style>
-</head>
-<body>
-    <form action="https://formspree.io/f/mdkkpbdo" method="POST">
-        <fieldset>
-            <legend>FORMS</legend>
-            <table>
-                <tr>
-                    <td><label>Name</label></td>
-                    <td><input type="text" name="name" placeholder="Enter your Name" required /></td>
-                </tr>
-                <tr>
-                    <td><label>Email</label></td>
-                    <td><input type="email" name="email" placeholder="Enter your Email" required /></td>
-                </tr>
-                <tr>
-                    <td><label>Age</label></td>
-                    <td><input type="number" name="age" placeholder="Enter your Age" required /></td>
-                </tr>
-                <tr>
-                    <td><label>Contact</label></td>
-                    <td><input type="tel" name="contact" placeholder="Enter your Contact" required /></td>
-                </tr>
-                <tr>
-                    <td><label>DOB</label></td>
-                    <td><input type="date" name="date" required /></td>
-                </tr>
-                <tr>
-                    <td><label>Passout Year</label></td>
-                    <td><input type="number" name="PassoutYear" placeholder="Enter your Passed out year" required /></td>
-                </tr>
-                <tr>
-                    <td><label>Upload your Image</label></td>
-                    <td><input type="file" name="image" required /></td>
-                </tr>
-                <tr>
-                    <td><label>Gender</label></td>
-                    <td>
-                        <input type="radio" value="male" name="gender" /> Male
-                        <input type="radio" value="female" name="gender" /> Female
-                        <input type="radio" value="others" name="gender" /> Others
-                    </td>
-                </tr>
-                <tr>
-                    <td><label>Programming Languages Known</label></td>
-                    <td>
-                        <input type="checkbox" value="Python" name="lang" /> Python
-                        <input type="checkbox" value="C" name="lang" /> C
-                        <input type="checkbox" value="Java" name="lang" /> Java
-                    </td>
-                </tr>
-                <tr>
-                    <td><label>Select Your Favorite Color</label></td>
-                    <td><input type="color" name="color" required /></td>
-                </tr>
-                <tr>
-                    <td><label>LinkedIn Profile</label></td>
-                    <td><input type="url" name="linkedin" placeholder="Enter your LinkedIn Link" required /></td>
-                </tr>
-            </table>
-            <button type="submit">Submit</button>
-        </fieldset>
-    </form>
-</body>
+    <form action="https://formspree.io/forms/xyzzboww/integration" method="POST">
+        <h2 id="title">Football Player Recruitment Application Form</h2>
+        <label for="firstName"><u>First Name:</u></label>
+        <input type="text" id="firstName" name="firstName" required><br><br>
+
+        <label for="lastName"><u>Last Name:</u></label>
+        <input type="text" id="lastName" name="lastName" required><br><br>
+
+        <label for="email"><u>Email:</u></label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="dob"><u>Date of Birth:</u></label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="phone"><u>Phone Number:</u></label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="address"><u>Address:</u></label>
+        <input type="text" id="address" name="address" required><br><br>
+
+        <label for="city"><u>City:</u></label>
+        <input type="text" id="city" name="city" required><br><br>
+
+        <label for="state"><u>State:</u></label>
+        <input type="text" id="state" name="state" required><br><br>
+
+        <label for="zip"><u>Zip Code:</u></label>
+        <input type="text" id="zip" name="zip" required><br><br>
+
+        <label for="country"><u>Country:</u></label>
+        <input type="text" id="country" name="country" required><br><br>
+
+        <label for="gender"><u>Gender:</u></label>
+        <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <label for="website"><u>Website:</u></label>
+        <input type="url" id="website" name="website"><br><br>
+
+        <label for="bio"><u>Bio:</u></label>
+        <textarea id="bio" name="bio" required placeholder="Enter your sport details like BR, PR, Achievements(listed on yr linkedin profile)"></textarea><br><br>
+
+        <br>
+        <label for="profilePicture"><u>Profile Picture:</u></label>
+        <input type="file" id="profilePicture" name="profilePicture" accept="image"><br><br>
+
+        <input type="submit" value="Submit">
 </html>
